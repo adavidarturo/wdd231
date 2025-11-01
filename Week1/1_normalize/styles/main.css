@@ -1,0 +1,16 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+header, main, footer {
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}

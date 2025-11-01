@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Home-web with my profile and courses information">
+    <meta name="author" content="David Anampa">
+    <title>WDD231 Site</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    <!-- (mobile) screens -->
+    <link rel="stylesheet" href="styles/small.css">
+    <!-- larger screens -->
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script defer src="scripts/dates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/array.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <!-- Logo House -->
+            <img class="site-logo" src="images/house-door-fill.svg" alt="Site logo">
+            <span class="site-name">Site Name</span>
+        </div>
+
+        <button class="hamburger" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">
+            <span class="hamburger-icon">☰</span>
+        </button>
+    </header>
+
+    <nav id="main-nav" class="nav-menu" role="navigation" aria-label="Primary">
+        <ul>
+            <li><a href="#home" class="nav-link"> Home</a></li>
+            <li><a href="#chamber" class="nav-link"> Chamber Project</a></li>
+            <li><a href="#final-projects" class="nav-link"> Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <!-- About me -->
+        <section class="about" id="home">
+            <h2 class="section-title">About Me</h2>
+            <div class="card about-card">
+                <p> My name is David Anampa, and I’m passionate about understanding how technology, data, and economics connect to shape the modern world. I started my academic path through BYU Pathway, studying web and computer programming with a focus on software and data development. Over time, I discovered my strongest interests lie in business, finance, and global economics, where I can combine analytical thinking with creativity to solve real-world problems.
+                    I enjoy learning how systems work — from financial markets to political and technological trends — and how data can drive smarter decisions. I’m currently expanding my skills in JavaScript, databases, and web design, while preparing for future studies in business management and finance.
+                    Outside of academics, I’m dedicated to fitness, discipline, and self-improvement. I believe success comes from consistency, balance, and resilience. My goal is to grow into a professional who not only understands business and technology but also the human and cultural side behind every innovation.
+                </p>
+            </div>
+        </section>
+        <!-- Student Photo -->
+        <section class="photo" id="photo">
+            <h2 class="section-title">Student Photo</h2>
+            <div class="card photo-card">
+                <img id="student-photo" class="profile-photo" src="images/profile.jpg" alt="profile-photo">
+            </div>
+        </section>
+        <!-- WCC -->
+        <section class="courses" id="courses-section">
+            <h2 class="courses-title">Web Certificate Courses</h2>
+            <!-- Filters for courses -->
+            <div class="filters">
+                <button id="btn-all" class="filter-btn active">All</button>
+                <button id="btn-cse" class="filter-btn">CSE</button>
+                <button id="btn-wdd" class="filter-btn">WDD</button>
+            </div>
+
+            <!-- Total credits -->
+            <p id="total-credits" class="total-credits">The total credits for courses listed above is <span id="credits-number"> 0 </span></p>
+            <!-- Course list -->
+            <ul id="course-list" class="course-list" aria-live="polite"> </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="socials">
+            <a class="social" href="https://www.linkedin.com/in/david-anampa-4ab621199/" aria-label="LinkedIn" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn logo"></a>
+            <a class="social" href="https://github.com/adavidarturo/wdd231" aria-label="GitHub" title="GitHub"><img src="images/github.svg" alt="GitHub logo"></a>
+            <a class="social" href="https://www.instagram.com/adavid_arturo/" aria-label="Instagram" title="Instagram"><img src="images/instagram.svg" alt="Instagram logo"></a> 
+        </div>
+
+        <p class="copyright">&copy; <span id="current-year"></span> David Anampa • Arequipa, Peru</p>
+        <p id="last-modified" class="last-modified">Last Modification:</p>
+    </footer>
+</body>
+</html>

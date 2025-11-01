@@ -1,0 +1,159 @@
+:root{
+  --dark:#222;
+  --muted:#e6e6e6;
+  --accent:#444;
+  --accent-strong:#111;
+  --brand:#111;
+  --text:#222;
+  --completed:#bfe8c3;
+  --incomplete:#f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#fff;
+  color:var(--text);
+  line-height:1.4;
+  padding:12px
+}
+
+/* Header */
+.site-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0}
+.logo-wrap{display:flex;align-items:center;gap:10px}
+.site-logo{width:60px;height:auto;display:block}
+.site-name{font-weight:600;font-size:1.05rem}
+
+/* Hamburger (mobile only) */
+.hamburger{
+  display:flex;
+  background:var(--muted);
+  border:2px solid #aaa;
+  width:44px;height:44px;border-radius:6px;align-items:center;justify-content:center;cursor:pointer;
+}
+
+/* Nav - hidden by default on mobile, opens to vertical stack */
+.nav-menu{display:none;margin-top:8px}
+.nav-menu.open{display:block}
+.nav-menu ul{
+  list-style:none;
+  margin:0 auto;
+  padding:0;
+  max-width:520px;
+  display:flex;
+  flex-direction:column
+}
+.nav-menu a{
+  display:flex;
+  align-items:center;
+  min-height:44px;
+  padding:12px 18px;
+  text-decoration:none;
+  font-weight:600;
+  text-align:left;
+  border:none;
+  color:var(--text);
+  background:transparent;
+  line-height:1.2;
+}
+
+/* Main content */
+main{margin-top:12px}
+h1{font-size:1.6rem;margin:8px 0 12px}
+.section-title{
+  background:var(--accent-strong);
+  color:#fff;
+  padding:8px;
+  font-weight:700;
+  margin:0 0 8px;
+  font-size:0.95rem;
+  text-align:center
+}
+
+/* Cards */
+.card {
+  background:var(--muted);
+  padding:12px;
+  border:1px solid #ccc
+}
+
+/* Photo & profile */
+.photo-card{display:flex;justify-content:center;align-items:center;padding:14px}
+.profile-photo {
+  display:block;
+  margin:0 auto;
+  width:50%;
+  max-width:200px;
+  height:300px;
+  border-radius:6px;
+  object-fit:cover;
+  background:#dcdcdc
+}
+
+/* Courses section */
+.courses-title {
+  background:var(--accent-strong);
+  color:#fff;
+  padding:10px;
+  text-align:center;
+  margin-top:18px;
+  font-weight:700
+}
+
+.filters{display:flex;gap:8px;justify-content:center;margin:10px 0;flex-wrap:wrap}
+.filter-btn{padding:8px 14px;border-radius:8px;border:2px solid #666;background:var(--incomplete);cursor:pointer;min-width:72px}
+.filter-btn.active{background:var(--brand);color:#fff;border-color:#000}
+
+/* Course list - stacked on mobile */
+
+.total-credits {
+  text-align: center;
+  margin-top: 1rem; 
+}
+
+.course-list {
+  list-style:none;
+  padding:0;
+  margin:10px 0;
+  display:flex;
+  flex-direction:column;
+  gap:8px
+}
+.course-list li{
+  display:flex;
+  align-items:center;
+  gap:8px;padding:8px;
+  border:2px solid #999;
+  border-radius:4px;
+  background:#ddd
+}
+.course-list li.completed{background:var(--completed);border-color:#6aa96a}
+.course-list li.incomplete{background:#e6e6e6;border-color:#cfcfcf}
+
+.course-list .status{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:22px;
+  height:22px;
+  border-radius:4px;
+  font-weight:700
+}
+
+/* Footer */
+.site-footer{
+  margin-top:18px;
+  padding-top:12px;
+  border-top:1px solid #ccc;
+  text-align:center;
+  font-size:0.9rem
+}
+.socials{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  margin-bottom:8px
+}
+.social img{width:36px;height:36px;object-fit:contain;}
+
