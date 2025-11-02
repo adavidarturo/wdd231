@@ -81,7 +81,7 @@ function renderCourses(filter = 'ALL') {
         const status = document.createElement('span');
         status.className = 'status';
         status.setAttribute('aria-hidden', 'true');
-        status.textContent = course.completed ? '✓  ' : '✕  ';
+        status.textContent = course.completed ? ' ✓ ' : ' ✕ ';
         li.appendChild(status);
 
         const title = document.createElement('strong');
