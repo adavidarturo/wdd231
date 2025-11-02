@@ -189,7 +189,7 @@ footer a:hover {
     font-weight:800
     }
 
-  .course-list li.completed .status{background:#10e50c;color:#000000}
-  .course-list li.incomplete .status{background:#e99e9e;color:#000000}
+  .course-list li.completed .status{color:#000000}
+  .course-list li.incomplete .status{color:#000000}
   .nav-menu a{white-space:nowrap} /* ensure no horizontal scroll from long nav text */
 }
