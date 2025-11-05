@@ -1,11 +1,11 @@
-# wdd231-site
+# week1-site
 
 ## Project Overview
 This project is a web application designed for the Web and Computer Programming certificate. It features a responsive layout that adapts to different screen sizes, ensuring a seamless user experience across devices.
 
 ## File Structure
 ```
-wdd231-site
+week1-site
 ├── index.html
 ├── styles
 │   ├── small.css
