@@ -4,7 +4,7 @@
     "address": "Av. Perú 123, Arequipa",
     "phone": "054-123456",
     "websiteURL": "https://comercialandina.com",
-    "image": "#",
+    "image": "",
     "membershipLevel": 3
   },
   {
@@ -12,7 +12,7 @@
     "address": "Calle Lima 456, Arequipa",
     "phone": "054-654321",
     "websiteURL": "https://solucionesdigitales.pe",
-    "image": "#",
+    "image": "",
     "membershipLevel": 2
   },
   {
@@ -20,7 +20,7 @@
     "address": "Jr. Amazonas 789, Arequipa",
     "phone": "054-987654",
     "websiteURL": "https://ecovida.org",
-    "image": "#",
+    "image": "",
     "membershipLevel": 1
   },
 
@@ -29,7 +29,7 @@
     "address": "Av. Tecnológica 101, Arequipa",
     "phone": "054-112233",
     "websiteURL": "https://innovatech.pe",
-    "image": "#",
+    "image": "",
     "membershipLevel": 2
   },
   {
@@ -37,7 +37,7 @@
     "address": "Plaza Mayor 12, Arequipa",
     "phone": "054-445566",
     "websiteURL": "https://cafecolonial.com",
-    "image": "#",
+    "image": "",
     "membershipLevel": 1
   },
   {
@@ -45,7 +45,7 @@
     "address": "Jr. Cusco 88, Arequipa",
     "phone": "054-778899",
     "websiteURL": "https://turismoandino.pe",
-    "image": "#",
+    "image": "",
     "membershipLevel": 3
   },
   {
@@ -53,7 +53,7 @@
     "address": "Av. Salud 202, Arequipa",
     "phone": "054-334455",
     "websiteURL": "https://biosalud.org",
-    "image": "#",
+    "image": "",
     "membershipLevel": 2
   }
 ]
