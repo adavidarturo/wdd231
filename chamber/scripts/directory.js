@@ -18,7 +18,7 @@ async function getMembers() {
 }
 
 function membershipLabel(level){
-  // map numeric membership to human label
+  // map numeric membership to label
   switch (level) {
     case 3: return 'Platinum';
     case 2: return 'Gold';
