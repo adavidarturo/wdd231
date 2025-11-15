@@ -1,4 +1,3 @@
-
 /* Color palette */
 :root{
   --warm-green: #577849;        /* green for header/footer */
@@ -65,10 +64,233 @@ body {
 }
 
 /* Main layout */
-main{
-  max-width: 1100px;
-  margin: 1rem auto;
-  padding: 0 1rem;
+main {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin: 1rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.hero-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6b35;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e55a2b;
+}
+
+/* Events Section */
+.events {
+    margin: 2rem 0;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.event-card {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-left: 4px solid #e29e4a;
+    border-radius: 5px;
+}
+
+.event-card h3 {
+    color: #e2984a;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+/* Weather Section */
+.weather {
+    background: linear-gradient(135deg, #e88f37 0%, #d6b167 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.weather h2 {
+    color: white;
+}
+
+.weather-current {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.temperature-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.temp-unit {
+    font-size: 1.5rem;
+}
+
+#weather-description {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+}
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.forecast-day p {
+    margin: 0.5rem 0;
+}
+
+.forecast-temp {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Spotlights Section */
+.spotlights {
+    margin: 2rem 0 3rem 0;
+}
+
+.spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    color: #e27d4a;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #e2934a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+.membership-badge {
+    display: inline-block;
+    background-color: #ff6b35;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.membership-badge.gold {
+    background-color: #ffd700;
+    color: #333;
+}
+
+.membership-badge.silver {
+    background-color: #c0c0c0;
+    color: #333;
 }
 
 /* Controls area */
@@ -313,6 +535,50 @@ main{
   }
   .footer-center { justify-content: center; margin: 0.5rem 0; }
   .footer-left, .footer-right { align-items: center; }
+}
+
+@media (min-width: 600px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 2.5rem;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather-forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 3rem;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 0 2rem;
+    }
 }
 
 /* Utility helpers  */

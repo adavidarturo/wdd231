@@ -1,59 +1,67 @@
 [
   {
+    "id": 0,
     "name": "Comercial Andina",
     "address": "Av. Perú 123, Arequipa",
     "phone": "054-123456",
-    "websiteURL": "https://comercialandina.com",
-    "image": "andina.webp",
-    "membershipLevel": 3
+    "website": "https://comercialandina.com",
+    "image": "images/andina.webp",
+    "membership": "gold"
   },
   {
+    "id": 1,
     "name": "Soluciones Digitales",
     "address": "Calle Lima 456, Arequipa",
     "phone": "054-654321",
-    "websiteURL": "https://solucionesdigitales.pe",
-    "image": "Soluciones-Digitales.webp",
-    "membershipLevel": 2
+    "website": "https://solucionesdigitales.pe",
+    "image": "images/Soluciones-Digitales.webp",
+    "membership": "silver"
   },
   {
+    "id": 2,
     "name": "EcoVida",
     "address": "Jr. Amazonas 789, Arequipa",
     "phone": "054-987654",
-    "websiteURL": "https://ecovida.org",
-    "image": "Eco-vida.webp",
-    "membershipLevel": 1
+    "website": "https://ecovida.org",
+    "image": "images/Eco-vida.webp",
+    "membership": "silver"
   },
 
   {
+    "id": 3,
     "name": "Innovatech Perú",
     "address": "Av. Tecnológica 101, Arequipa",
     "phone": "054-112233",
-    "websiteURL": "https://innovatech.pe",
-    "image": "tech_peru.webp",
-    "membershipLevel": 2
+    "website": "https://innovatech.pe",
+    "image": "images/tech_peru.webp",
+    "membership": "silver"
   },
   {
+    "id": 4,
     "name": "Café Colonial",
     "address": "Plaza Mayor 12, Arequipa",
     "phone": "054-445566",
-    "websiteURL": "https://cafecolonial.com",
-    "image": "cafe_colonial.webp",
-    "membershipLevel": 1
+    "website": "https://cafecolonial.com",
+    "image": "images/cafe_colonial.webp",
+    "membershipLevel": "gold"
   },
   {
+    "id": 5,
     "name": "Turismo Andino",
     "address": "Jr. Cusco 88, Arequipa",
     "phone": "054-778899",
-    "websiteURL": "https://turismoandino.pe",
-    "image": "turismo_andino.webp",
-    "membershipLevel": 3
+    "website": "https://turismoandino.pe",
+    "image": "images/turismo_andino.webp",
+    "membership": "gold"
   },
   {
+    "id": 6,
     "name": "BioSalud",
     "address": "Av. Salud 202, Arequipa",
     "phone": "054-334455",
-    "websiteURL": "https://biosalud.org",
-    "image": "biotech.webp",
-    "membershipLevel": 2
+    "website": "https://biosalud.org",
+    "image": "images/biotech.webp",
+    "membership": "silver"
   }
 ]
+
