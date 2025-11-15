@@ -143,12 +143,12 @@ main {
 .event-card {
     background: #f5f5f5;
     padding: 1rem;
-    border-left: 4px solid #e29e4a;
+    border-left: 4px solid #e76e31;
     border-radius: 5px;
 }
 
 .event-card h3 {
-    color: #e2984a;
+    color: #e76e31;
     margin-bottom: 0.5rem;
 }
 
@@ -160,14 +160,14 @@ main {
 /* Weather Section */
 .weather {
     background: linear-gradient(135deg, #e88f37 0%, #d6b167 100%);
-    color: white;
+    color: rgb(11, 11, 11);
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
 }
 
 .weather h2 {
-    color: white;
+    color: rgb(16, 16, 16);
 }
 
 .weather-current {
@@ -252,7 +252,7 @@ main {
 }
 
 .spotlight-card h3 {
-    color: #e27d4a;
+    color: #e76e31;
     margin-bottom: 0.5rem;
 }
 
@@ -264,7 +264,7 @@ main {
 .spotlight-card a {
     display: inline-block;
     margin-top: 1rem;
-    color: #e2934a;
+    color: #e76e31;
     text-decoration: none;
     font-weight: bold;
 }
@@ -275,7 +275,7 @@ main {
 
 .membership-badge {
     display: inline-block;
-    background-color: #ff6b35;
+    background-color: #e76e31;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
