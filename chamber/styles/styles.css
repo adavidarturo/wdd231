@@ -284,13 +284,15 @@ main {
 }
 
 .membership-badge.gold {
-    background-color: #d9c003ee;
+    background-color: #ffe205ee;
     color: #333;
+    border: 1px solid #000; 
 }
 
 .membership-badge.silver {
-    background-color: #c0c0c0;
+    background-color: #cac9c9;
     color: #333;
+    border: 1px solid #000;
 }
 
 /* Controls area */
@@ -579,6 +581,55 @@ main {
     main {
         padding: 0 2rem;
     }
+}
+
+/* Minimal nav/menu responsive rules */
+.menu-toggle{
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* default: mobile layout - hide nav list until toggled */
+.nav-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+/* when active, show as block (stacked mobile menu) */
+.nav-list.active{
+  display: block;
+  margin-top: 0.75rem;
+  background: rgba(255,255,255,0.95);
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* simple link styling for mobile stacked menu */
+.nav-list li{
+  margin: 0.35rem 0;
+}
+
+/* Larger screens: show menu inline and hide hamburger button */
+@media (min-width: 768px){
+  .menu-toggle{ display: none; }
+  .nav-list{
+    display: flex !important;
+    gap: 1rem;
+    align-items: center;
+    background: transparent;
+    padding: 0;
+  }
+  .nav-list li{ margin: 0; }
 }
 
 /* Utility helpers  */

@@ -27,6 +27,7 @@
     <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/last_modify.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/nav-toggle.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -35,6 +36,21 @@
           <h1 class="site-title">Chamber of Commerce - Arequipa</h1>
         </div>
     </header>
+
+    <nav>
+        <!-- Hamburger button: aria-expanded toggled via JS -->
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">
+          <span class="menu-icon">☰</span>
+          <span class="menu-text">Menu</span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#" class="join-link">Join</a></li>
+        </ul>
+    </nav>
+
     <main>
         <!-- Hero Section -->
         <section class="hero">
