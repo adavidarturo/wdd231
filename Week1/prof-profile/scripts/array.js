@@ -61,6 +61,21 @@ const courses = [
     }
 ];
 
+/* Display course details in modal */
+function displayCourseModal(course) {
+    const dialog = document.getElementById('course-details');
+    if (!dialog) return;
+
+    document.getElementById('modal-title').textContent = course.title;
+    document.getElementById('modal-subject').textContent = `${course.subject} ${course.number}`;
+    document.getElementById('modal-credits').textContent = course.credits;
+    document.getElementById('modal-certificate').textContent = course.certificate;
+    document.getElementById('modal-description').textContent = course.description;
+    document.getElementById('modal-technologies').textContent = course.technology.join(', ');
+
+    dialog.showModal();
+}
+
 /* Render courses into DOM */
 function renderCourses(filter = 'ALL') {
     const list = document.getElementById('course-list');
@@ -76,6 +91,7 @@ function renderCourses(filter = 'ALL') {
     displayed.forEach(course => {
         const li = document.createElement('li');
         li.className = course.completed ? 'completed' : 'incomplete';
+        li.style.cursor = 'pointer';
 
         // status marker (check or x) + course text
         const status = document.createElement('span');
@@ -92,6 +108,9 @@ function renderCourses(filter = 'ALL') {
         meta.className = 'course-meta';
         meta.textContent = `${course.credits} credits`;
         li.appendChild(meta);
+
+        /* Click event to open modal */
+        li.addEventListener('click', () => displayCourseModal(course));
 
         list.appendChild(li);
     });
@@ -120,6 +139,21 @@ function initCourseFilters() {
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses('ALL');
     initCourseFilters();
+
+    /* Modal close functionality */
+    const dialog = document.getElementById('course-details');
+    const closeBtn = document.getElementById('close-dialog');
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => dialog.close());
+    }
+
+    /* Close modal when clicking outside */
+    if (dialog) {
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) dialog.close();
+        });
+    }
 });
 
 
