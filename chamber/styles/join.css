@@ -1,0 +1,171 @@
+/* Join Page Styles */
+
+.join-wrap {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.join-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.join-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.join-form input[type="text"]:focus,
+.join-form input[type="email"]:focus,
+.join-form input[type="tel"]:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: none;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 3px rgba(10, 88, 202, 0.1);
+}
+
+.join-form input[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background-color: #0a58ca;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: #0846a0;
+}
+
+.join-form input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.membership-cards {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: cardIn 0.6s ease forwards;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card a {
+  color: #0a58ca;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.card a:hover {
+  color: #0846a0;
+}
+
+.card .price {
+  font-weight: 700;
+}
+
+@keyframes cardIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+dialog {
+  max-width: 520px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.modal-content p {
+  margin: 0;
+}
+
+.modal-content button.close {
+  padding: 0.5rem 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.modal-content button.close:hover {
+  background-color: #5a6268;
+}
+
+@media (min-width: 900px) {
+  .join-wrap {
+    flex-direction: row;
+  }
+
+  .membership-cards {
+    width: 320px;
+  }
+}
+
+@media (max-width: 899px) {
+  .join-wrap {
+    flex-direction: column-reverse;
+  }
+}

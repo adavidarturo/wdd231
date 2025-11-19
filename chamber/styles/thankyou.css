@@ -1,0 +1,52 @@
+/* Thank You Page Styles */
+
+.summary {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.summary h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.summary p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.summary-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.summary-list > div:nth-child(odd) {
+  font-weight: 600;
+  color: #333;
+}
+
+.summary-list > div:nth-child(even) {
+  color: #555;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .summary {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .summary-list {
+    grid-template-columns: 1fr;
+  }
+}
