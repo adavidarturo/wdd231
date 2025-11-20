@@ -154,6 +154,22 @@ dialog::backdrop {
   background-color: #5a6268;
 }
 
+.card.delay-05 {
+  animation-delay: .05s;
+}
+
+.card.delay-20 {
+  animation-delay: .2s;
+}
+
+.card.delay-35 {
+  animation-delay: .35s;
+}
+
+.card.delay-50 {
+  animation-delay: .5s;
+}
+
 @media (min-width: 900px) {
   .join-wrap {
     flex-direction: row;
