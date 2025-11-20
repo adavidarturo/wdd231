@@ -15,8 +15,10 @@
         if(!dialog) return;
         if(typeof dialog.showModal === 'function'){
           dialog.showModal();
+          const closeBtn = dialog.querySelector('.close'); if(closeBtn) closeBtn.focus();
         } else {
           dialog.setAttribute('open','');
+          const closeBtn = dialog.querySelector('.close'); if(closeBtn) closeBtn.focus();
         }
       });
     });

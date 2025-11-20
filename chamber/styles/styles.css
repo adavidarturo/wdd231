@@ -620,6 +620,32 @@ main {
   margin: 0.35rem 0;
 }
 
+/* Navigation link styling for better wayfinding */
+.nav-list a{
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-list a:hover,
+.nav-list a:focus{
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  outline: none;
+}
+
+/* Active/selected link — clear visual indicator */
+.nav-list a.active,
+.nav-list li a[aria-current="page"]{
+  background: #fff;
+  color: var(--warm-green);
+  border: 2px solid rgba(0,0,0,0.06);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
 /* Larger screens: show menu inline and hide hamburger button */
 @media (min-width: 768px){
   .menu-toggle{ display: none; }
