@@ -588,13 +588,24 @@ main {
 .menu-toggle{
   background: transparent;
   border: 1px solid rgba(0,0,0,0.06);
-  padding: 0.4rem 0.6rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 8px;
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   align-items: center;
   cursor: pointer;
   font-weight: 600;
+}
+
+/* Larger hamburger icon and text for better touch targets */
+.menu-toggle .menu-icon{
+  font-size: 2.3rem;
+  line-height: 1;
+}
+
+.menu-toggle .menu-text{
+  font-size: 2.06rem;
+  letter-spacing: 0.2px;
 }
 
 /* default: mobile layout - hide nav list until toggled */

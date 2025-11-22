@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const icon = menuToggle.querySelector('.menu-icon');
     const label = menuToggle.querySelector('.menu-text');
     if (icon) icon.textContent = isOpen ? '✕' : '☰';
-    if (label) label.textContent = isOpen ? 'Cerrar' : 'Menu';
-    menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    if (label) label.textContent = isOpen ? 'Close' : 'Menu';
+    menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   }
 
   menuToggle.addEventListener('click', () => {
