@@ -1,0 +1,106 @@
+/* Discover page specific styles */
+.discover-main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discover-hero {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.visit-message {
+  background: linear-gradient(90deg, rgba(255,255,255,0.95), rgba(245,245,245,0.95));
+  border: 1px solid #ddd;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+.visit-message-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem }
+.visit-close { background:transparent; border: none; font-size:1.1rem; cursor:pointer }
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: auto;
+  /* mobile: 1 column */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a1"
+    "a2"
+    "a3"
+    "a4"
+    "a5"
+    "a6"
+    "a7"
+    "a8";
+}
+
+.card--1 { grid-area: a1 }
+.card--2 { grid-area: a2 }
+.card--3 { grid-area: a3 }
+.card--4 { grid-area: a4 }
+.card--5 { grid-area: a5 }
+.card--6 { grid-area: a6 }
+.card--7 { grid-area: a7 }
+.card--8 { grid-area: a8 }
+
+.place-card { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.06); display:flex; flex-direction:column; min-height:420px }
+.place-card h2 { font-size:1.1rem; margin:0 0 .4rem }
+.place-card figure { margin:0 0 .5rem; width:100%; height:200px; overflow:hidden; border-radius:4px }
+.place-card img { width:100%; height:auto; display:block; object-fit:contain; background-color:#f6f6f6 }
+.place-card address { font-style:normal; color:#666; font-size:.95rem; margin: .4rem 0 }
+.place-card p { margin: 0.4rem 0 0; color:#333; font-size:0.95rem; line-height:1.35; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; -webkit-line-clamp:4; line-clamp:4 }
+.learn-more { margin-top:auto; background:#2a7ae2; color:#fff; border:none; padding:.45rem .7rem; border-radius:4px; cursor:pointer }
+
+/* Medium screens: two column grid */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a1 a2"
+      "a3 a4"
+      "a5 a6"
+      "a7 a8";
+  }
+  /* Medium: show full images (no crop) and keep consistent card height */
+  .place-card { min-height:420px }
+  .place-card figure { height:auto }
+  .place-card img { object-fit:contain; height:auto }
+  .place-card p { -webkit-line-clamp:5; line-clamp:5 }
+}
+
+/* Large screens: consistent 3x3 grid */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "a1 a2 a3"
+      "a4 a5 a6"
+      "a7 a8 a9";
+  }
+  .card--1 { grid-area: a1 }
+  .card--2 { grid-area: a2 }
+  .card--3 { grid-area: a3 }
+  .card--4 { grid-area: a4 }
+  .card--5 { grid-area: a5 }
+  .card--6 { grid-area: a6 }
+  .card--7 { grid-area: a7 }
+  .card--8 { grid-area: a8 }
+  /* Large: fixed image height with cover to preserve layout and slightly taller cards */
+  .place-card { min-height:460px }
+  .place-card figure { height:220px }
+  .place-card img { height:100%; object-fit:cover }
+  .place-card p { -webkit-line-clamp:6; line-clamp:6 }
+}
+
+/* Hover effect only for devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  .place-card img:hover {
+    transform: scale(1.03);
+    transition: transform 220ms ease-in-out, box-shadow 220ms ease-in-out;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+}
