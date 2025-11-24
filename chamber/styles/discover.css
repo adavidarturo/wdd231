@@ -52,7 +52,7 @@
 .place-card img { width:100%; height:auto; display:block; object-fit:contain; background-color:#f6f6f6 }
 .place-card address { font-style:normal; color:#666; font-size:.95rem; margin: .4rem 0 }
 .place-card p { margin: 0.4rem 0 0; color:#333; font-size:0.95rem; line-height:1.35; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; }
-.learn-more { margin-top:auto; background:#2a7ae2; color:#fff; border:none; padding:.45rem .7rem; border-radius:4px; cursor:pointer }
+.learn-more { margin-top:auto; background:#215daa; color:#fff; border:none; padding:.45rem .7rem; border-radius:4px; cursor:pointer }
 
 /* Medium screens: two column grid */
 @media (min-width: 641px) and (max-width: 1024px) {
