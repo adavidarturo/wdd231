@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles/join.css">
   <script src="scripts/nav-toggle.js" defer></script>
   <script src="scripts/last_modify.js" defer></script>
+  <script src="scripts/join.js" defer></script>
 
   <meta property="og:title" content="Join to the Chamber of Commerce Arequipa">
   <meta property="og:description" content="Join to us with your details and your company's details to get started">
@@ -84,7 +85,7 @@
 
           <label>
             Membership level:
-            <select name="membership" title="Select membership level" required>
+            <select name="membership" title="Select membership level" autocomplete="off" required>
               <option value="">Choose a level</option>
               <option value="np">NP Membership (Non-profit, no fee)</option>
               <option value="bronze">Bronze Membership</option>
@@ -95,10 +96,10 @@
 
           <label>
             Organization description:
-            <textarea name="description" title="Tell us about your organization" rows="4"></textarea>
+            <textarea name="description" title="Tell us about your organization" rows="4" autocomplete="off"></textarea>
           </label>
 
-          <input type="hidden" name="timestamp" id="timestamp-field">
+          <input type="hidden" name="timestamp" id="timestamp-field" title="Submission timestamp (ISO)" autocomplete="off">
 
           <input type="submit" value="Submit Application">
         </fieldset>

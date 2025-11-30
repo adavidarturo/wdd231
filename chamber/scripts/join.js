@@ -34,22 +34,24 @@
       if(e.key === 'Escape') document.querySelectorAll('dialog[open]').forEach(d=>{ if(d.close) d.close(); else d.removeAttribute('open'); });
     });
 
-// Read GET parameters and display required fields
+// Read GET parameters and display required fields (safely)
     (function(){
       const params = new URLSearchParams(window.location.search);
       const out = id => document.getElementById(id);
       const safe = v => v ? v : '—';
 
-      out('out-first').textContent = safe(params.get('firstName'));
-      out('out-last').textContent = safe(params.get('lastName'));
-      out('out-email').textContent = safe(params.get('email'));
-      out('out-mobile').textContent = safe(params.get('mobile'));
-      out('out-business').textContent = safe(params.get('businessName'));
+      const firstEl = out('out-first'); if(firstEl) firstEl.textContent = safe(params.get('firstName'));
+      const lastEl = out('out-last'); if(lastEl) lastEl.textContent = safe(params.get('lastName'));
+      const emailEl = out('out-email'); if(emailEl) emailEl.textContent = safe(params.get('email'));
+      const mobileEl = out('out-mobile'); if(mobileEl) mobileEl.textContent = safe(params.get('mobile'));
+      const businessEl = out('out-business'); if(businessEl) businessEl.textContent = safe(params.get('businessName'));
 
-      const ts = params.get('timestamp');
-      if(ts){
-        try{
-          out('out-ts').textContent = new Date(ts).toLocaleString();
-        }catch(e){ out('out-ts').textContent = ts }
+      const tsVal = params.get('timestamp');
+      if(tsVal){
+        const tsEl = out('out-ts');
+        if(tsEl){
+          try { tsEl.textContent = new Date(tsVal).toLocaleString(); }
+          catch(e) { tsEl.textContent = tsVal; }
+        }
       }
     })();
