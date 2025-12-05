@@ -1,0 +1,19 @@
+/* Styles for medium devices (tablet) */
+@media (min-width:480px) and (max-width:919px){
+  .hero-copy h2{
+    font-size:34px
+  }
+  .hero{
+    height:300px
+  }
+  .team-grid{
+    grid-template-columns:repeat(2,1fr)
+  }
+  .site-footer .footer-inner{
+    flex-direction:row;
+    align-items:center
+  }
+  .join-form{
+    padding:12px
+  }
+}

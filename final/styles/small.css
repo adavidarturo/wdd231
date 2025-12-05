@@ -1,0 +1,24 @@
+/* Styles for small devices (mobile) */
+@media (max-width:479px){
+  .hero-copy h2{
+    font-size:28px
+  }
+  .hero{
+    height:220px
+  }
+  .team-grid{
+    grid-template-columns:repeat(1,1fr)
+  }
+  .site-footer .footer-inner{
+    flex-direction:column;
+    gap:8px;
+    text-align:center
+  }
+  .team-card .avatar{
+    width:56px;
+    height:56px
+  }
+  .join-form{
+    padding:8px
+  }
+}

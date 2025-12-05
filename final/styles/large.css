@@ -1,0 +1,16 @@
+/* Styles for large devices (desktop) */
+
+@media (min-width:920px){
+  .hero-copy h2{
+    font-size:48px
+}
+  .hero{
+    height:420px
+  }
+  .team-grid{
+    grid-template-columns:repeat(3,1fr)
+  }
+  .site-footer .footer-inner{
+    flex-direction:row
+  }
+}

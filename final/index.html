@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MMA Academy – The Warrior Path | Home</title>
+  <meta name="description" content="MMA Academy main page - training disciplines, coaches, subscription levels and location on a map">
+  <meta name="author" content="David Anampa">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/subscriptions.css">
+
+  <!-- Meta tags - Facebook -->
+  <meta property="og:title" content="MMA Academy – The Warrior Path">
+  <meta property="og:description" content="Train in multiple martial arts disciplines with experienced instructors.">
+  <meta property="og:image" content="https://adavidarturo.github.io/wdd231/final/images/gem.svg">
+  <meta property="og:url" content="https://adavidarturo.github.io/wdd231/final/index.html">
+
+  <!-- Mapbox -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.js"></script>
+
+
+  <script type="module" src="scripts/main.mjs" defer></script>
+  <script type="module" src="scripts/nav.mjs" defer></script>
+  <script type="module" src="scripts/home.mjs" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <!-- Inline SVG logo placeholder -->
+      <a href="index.html" aria-label="MMA Academy home">
+        <img src="images/gem.svg" width="48" height="48" alt="MMA Academy logo">
+      </a>
+      <h1>MMA Academy - The Warrior Path</h1>
+    </div>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <nav id="primary-nav" class="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="disciplines.html">Disciplines</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h2>The Warrior Path</h2>
+          <p class="lead">Train with purpose — technical instruction, conditioning, and community for all levels.</p>
+          <p><a class="btn" href="join.html">Start Your Journey</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary container">
+      <div class="intro">
+        <h3>About MMA Academy</h3>
+        <p>We combine striking, grappling, and wrestling disciplines into a structured curriculum designed to build skill, resilience, and sportsmanship. Coaches are certified and classes are available for beginners through advanced athletes.</p>
+      </div>
+      <div class="team">
+        <h4>Meet the Team</h4>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar"><img src="images/coach-1.webp" alt="Coach Ramirez"></div>
+            <h5>Coach Ramirez</h5>
+            <p class="role">Head Coach — Striking</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar"><img src="images/coach-3.webp" alt="Coach Smith"></div>
+            <h5>Coach Smith</h5>
+            <p class="role">Grappling Specialist</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar"><img src="images/coach-2.webp" alt="Coach Lopez"></div>
+            <h5>Coach Lopez</h5>
+            <p class="role">Strength & Conditioning</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <h3>Featured Disciplines</h3>
+      <p class="muted">Explore our main programs — select a discipline to learn more on the Disciplines page.</p>
+      <div id="items" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section class="subscriptions container">
+      <h3>Subscription Levels</h3>
+      <p class="muted">Explore our three main tiers — click any card for full details and features.</p>
+      <div class="subs-grid">
+        <a class="sub-card" href="subscriptions.html#bronze">
+          <h4>Bronze</h4>
+          <p>Intro access and 2 beginner classes/week.</p>
+          <p class="price">$29/mo</p>
+        </a>
+        <a class="sub-card highlighted" href="subscriptions.html#silver">
+          <h4>Silver</h4>
+          <p>Full access to group classes and open gym.</p>
+          <p class="price">$59/mo</p>
+        </a>
+        <a class="sub-card" href="subscriptions.html#gold">
+          <h4>Gold</h4>
+          <p>Unlimited classes, private coaching, competition prep.</p>
+          <p class="price">$99/mo</p>
+        </a>
+      </div>
+      <p class="center"><a class="btn btn-outline" href="subscriptions.html">View Plans</a></p>
+    </section>
+
+    <!-- Gyms: Loaded from data/gyms.json by scripts/main.mjs -->
+    <section class="gyms container">
+      <h2>All of our Gyms</h2>
+      <div id="gyms" data-source="gyms" class="grid cards" aria-live="polite"></div>
+    </section>
+
+    <section class="map-section container">
+      <h3>Find our Office - Urb. Puerta del Sol Mz. A Lt. 2</h3>
+      <div id="map" class="map" aria-label="Map showing gym location"></div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>The warrior path - Arequipa</p>
+        <p>Address: Av. Example 123</p>
+        <p>Cel: (+51) 999 888 777</p>
+      </div>
+
+      <div class="footer-center" aria-label="Social media">
+        <a class="social" href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <img src="images/github.svg" alt="GitHub">
+        </a>
+        <a class="social" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <img src="images/instagram.svg" alt="Instagram">
+        </a>
+        <a class="social" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <p>WDD231 Final Project</p>
+        <p>David Anampa</p>
+        <p>© The Warrior path - Arequipa</p>
+        <p id="lastModifiedLabel">Last Modification: <span id="lastModified">--</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal container -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close dialog">x-icon</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+</body>
+</html>

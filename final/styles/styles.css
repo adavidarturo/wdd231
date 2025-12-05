@@ -1,0 +1,224 @@
+
+:root{
+  --accent:#ef3d4c;
+  --dark:#e20707;
+  --bg:#F8F9FA;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --text:#111827;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:Roboto, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  margin:0;color:var(--text);
+  background:var(--bg);line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  /* Defensive rule to prevent accidental horizontal scrolling from wide elements */
+  overflow-x: hidden;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:24px}
+
+.site-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:16px 24px;
+  background:var(--dark);
+  border-bottom:1px solid rgba(0,0,0,0.2)
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px
+}
+.brand h1{
+  font-family:Oswald, sans-serif;
+  margin:0;
+  font-size:20px;
+  color:var(--card)
+}
+.primary-nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:18px
+}
+.primary-nav a{
+  text-decoration:none;
+  color:var(--card);
+  font-weight:600
+}
+.primary-nav a:hover{color:var(--accent)}
+
+/* Brand image styling (gem logo) */
+.brand img{
+  display:block;
+  width:48px;
+  height:48px;
+  border-radius:8px;
+  background:var(--dark);
+  padding:6px
+}
+.brand h1{margin:0}
+
+/* Nav toggle button default hidden */
+#nav-toggle{
+  display:none;
+  background:transparent;
+  border:0;
+  font-size:20px;
+  color:var(--card)
+}
+
+/* Keep common button styles global (used across pages) */
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700
+}
+.btn-outline{
+  border:2px solid var(--accent);
+  color:var(--accent);
+  background:transparent;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none
+}
+
+/* Core card/grid styles used across pages */
+.highlights{padding-top:12px}
+.muted{color:var(--muted)}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;padding:12px 0
+}
+.card{
+  background:var(--card);
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 10px 20px rgba(2,6,23,0.06);
+  transition:transform .18s ease
+}
+.card:hover{transform:translateY(-6px)}
+
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  display:block
+}
+.card-body{padding:14px}
+.card .meta{color:var(--muted);font-size:0.9rem}
+.card .location{color:var(--muted);font-size:0.9rem;margin-top:6px}
+.card .card-actions{margin-top:10px}
+
+.card .card-actions button{
+  background:transparent;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  padding:8px 10px;
+  border-radius:8px
+}
+
+/* Modal (shared) */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(2,6,23,0.5);
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.modal[aria-hidden="false"]{display:flex}
+
+.modal-content{background:#fff;
+  padding:20px;
+  border-radius:10px;
+  max-width:680px;
+  width:100%;
+  position:relative
+}
+.modal-content{margin:auto;max-height:80vh;overflow:auto}
+
+/* Hide the X close button per user request; closing is done by clicking overlay */
+.modal .modal-close{display:none}
+.modal-close{
+  position:absolute;
+  right:12px;
+  top:12px;
+  border:none;
+  background:transparent;
+  font-size:18px
+}
+
+/* Footer with three columns and red brand color */
+.site-footer{background:var(--dark);color:#fff;padding:20px 0}
+
+.site-footer .footer-inner{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 24px
+}
+.site-footer .footer-left, .site-footer .footer-right{color:#fff}
+
+.site-footer .footer-center{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  justify-content:center
+}
+.site-footer .social img{
+  width:44px;
+  height:44px;
+  display:block;
+  transition:transform .15s ease
+}
+.site-footer .social img:hover{transform:scale(1.15)}
+
+/* Hover effect for subscription cards on homepage kept in subscriptions.css */
+.site-footer .social{display:inline-block}
+.site-footer p{margin:4px 0;color:#fff}
+
+footer{
+  padding:20px;
+  text-align:center;
+  font-size:0.95rem;
+  color:var(--muted);
+  background:transparent
+}
+
+/* Responsive nav helpers */
+@media (max-width:920px){
+  .summary{flex-direction:column}
+}
+@media (max-width:720px){
+  /* show hamburger button on small screens */
+  #nav-toggle{display:inline-block}
+
+  /* collapse navigation into a slide-down panel using max-height */
+  .primary-nav{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .28s ease;
+    padding-left:24px
+  }
+
+  .primary-nav.open{max-height:420px}
+  .primary-nav ul{flex-direction:column;gap:8px}
+}

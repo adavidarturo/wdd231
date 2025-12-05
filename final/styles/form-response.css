@@ -1,0 +1,10 @@
+/* Page-specific styles for form-response.html */
+@import url('styles.css');
+
+.response-panel{
+  max-width:720px;
+  margin:20px auto;
+  padding:18px;
+  background:var(--card);
+  border-radius:10px
+}

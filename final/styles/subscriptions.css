@@ -1,0 +1,46 @@
+/* Page-specific styles for subscriptions.html */
+@import url('styles.css');
+
+.plan-detail{
+  border-left:4px solid rgba(0,0,0,0.03);
+  padding-left:16px
+}
+
+/* Subscriptions / pricing moved from global */
+.subscriptions{padding:18px 0}
+
+.subs-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px
+}
+.sub-card{
+  background:var(--card);
+  padding:16px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 8px 18px rgba(2,6,23,0.06)
+}
+.sub-card .price{
+  font-size:20px;
+  font-weight:700;
+  margin-top:8px;
+  color:var(--dark)
+}
+.sub-card.highlighted{
+  border:2px solid var(--accent)
+}
+.center{text-align:center}
+
+.subs-grid a.sub-card{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  border:2px solid transparent;
+  transition:border-color .15s ease, transform .15s ease
+}
+.subscriptions .subs-grid a.sub-card:hover,
+.subs-grid a.sub-card:hover{
+    border-color:var(--accent);
+    transform:translateY(-6px)
+}

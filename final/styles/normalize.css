@@ -1,0 +1,55 @@
+/* Source: a condensed normalize approach */
+
+html{
+  line-height:1.15;
+  -webkit-text-size-adjust:100%
+}
+body{
+  margin:0
+}
+main{
+  display:block
+}
+h1,h2,h3,h4,h5,h6{
+  font-size:inherit;
+  font-weight:inherit
+}
+pre{
+  font-family:monospace,monospace;
+  font-size:1em
+}
+a{
+  background-color:transparent
+}
+abbr[title]{
+  border-bottom:none;
+  text-decoration:underline dotted
+}
+b,strong{
+  font-weight:700
+}
+small{
+    font-size:80%
+}
+button,input,select,textarea{
+  font-family:inherit;
+  font-size:100%;
+  margin:0
+}
+button{
+  overflow:visible
+}
+button,select{
+  text-transform:none
+}
+textarea{
+  overflow:auto
+}
+img{
+  border-style:none;
+  max-width:100%;
+  height:auto
+}
+table{
+    border-collapse:collapse
+}

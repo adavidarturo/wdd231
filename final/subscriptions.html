@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Subscriptions — MMA Academy</title>
+  <meta name="description" content="Detailed subscription plans and features for MMA Academy.">
+  <meta name="author" content="David Anampa">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/subscriptions.css">
+  <script type="module" src="scripts/nav.mjs" defer></script>
+  <script type="module" src="scripts/subscriptions.mjs" defer></script>
+
+  <!-- Meta tags - Facebook -->
+  <meta property="og:title" content="MMA Academy – The Warrior Path - Subscription levels">
+  <meta property="og:description" content="Train in multiple martial arts disciplines with experienced instructors.">
+  <meta property="og:image" content="https://adavidarturo.github.io/wdd231/final/images/gem.svg">
+  <meta property="og:url" content="https://adavidarturo.github.io/wdd231/final/subscriptions.html">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" aria-label="MMA Academy home">
+        <img src="images/gem.svg" width="48" height="48" alt="MMA Academy logo">
+      </a>
+      <h1>MMA Academy - The Warrior Path</h1>
+    </div>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <nav id="primary-nav" class="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="disciplines.html">Disciplines</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Subscription Plans</h2>
+    <p class="lead">Choose the plan that fits your goals — each tier includes progressive benefits and access to specialized coaching.</p>
+
+    <section id="bronze" class="plan-detail">
+      <h3>Bronze — Starter</h3>
+      <p class="muted">Best for newcomers and hobbyists</p>
+      <ul>
+        <li>2 group classes per week (beginner-friendly)</li>
+        <li>Access to open gym during specified hours</li>
+        <li>Monthly group conditioning session</li>
+      </ul>
+      <p class="price">$29/month</p>
+      <p><a class="btn" href="join.html?plan=bronze">Choose a Plan</a></p>
+    </section>
+
+    <section id="silver" class="plan-detail">
+      <h3>Silver — Pro</h3>
+      <p class="muted">For committed trainees and semi-competitors</p>
+      <ul>
+        <li>Unlimited group classes</li>
+        <li>Open gym access</li>
+        <li>One one-on-one coaching session per month</li>
+        <li>Discounted rate for seminars</li>
+      </ul>
+      <p class="price">$59/month</p>
+      <p><a class="btn" href="join.html?plan=silver">Choose a Plan</a></p>
+    </section>
+
+    <section id="gold" class="plan-detail">
+      <h3>Gold — Elite</h3>
+      <p class="muted">For competitive athletes and advanced coaching</p>
+      <ul>
+        <li>All Silver benefits</li>
+        <li>Weekly private coaching</li>
+        <li>Competition preparation and nutrition consult</li>
+        <li>Priority seminar access</li>
+      </ul>
+      <p class="price">$99/month</p>
+      <p><a class="btn" href="join.html?plan=gold">Choose a Plan</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-left">
+        <p>The warrior path - Arequipa</p>
+        <p>Address: Av. Example 123</p>
+        <p>Cel: (+51) 999 888 777</p>
+      </div>
+
+      <div class="footer-center" aria-label="Social media">
+        <a class="social" href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+        <a class="social" href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a class="social" href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+
+      <div class="footer-right">
+        <p>WDD231 Final Project</p>
+        <p>David Anampa</p>
+        <p>© The Warrior path - Arequipa</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

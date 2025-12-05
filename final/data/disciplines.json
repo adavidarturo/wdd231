@@ -1,0 +1,83 @@
+[
+  {
+    "id": "boxing",
+    "name": "Boxing",
+    "focus": "Striking, footwork, defensive movement",
+    "duration": "60 min",
+    "level": "All levels",
+    "description": "Fundamentals of boxing: stance, jab, cross, combinations, and conditioning drills.",
+    "extra": "Advanced footwork drills focus on head movement, angles, and defensive counters, combined with periodized conditioning programs that build endurance, speed, and power over time. Students receive guided sparring progressions and competition rule briefings, plus technical video analysis to refine combinations and defensive timing for both amateur and competitive boxing contexts.",
+    "img": "images/boxing-d.webp"
+  },
+  {
+    "id": "jiu-jitsu",
+    "name": "Brazilian Jiu-Jitsu",
+    "focus": "Ground control, submissions, positional escapes",
+    "duration": "75 min",
+    "level": "All levels",
+    "description": "Class focuses on technique, rolling (sparring), and safety protocols for grappling.",
+    "extra": "Instructor-led positional breakdowns cover guard passing, sweeps, escapes, and submission chains, while guided rolling sessions emphasize control and safe sparring. Students benefit from video review to identify technical gaps, individualized drilling plans to address weaknesses, and a progression path from fundamental posture and grips to advanced submission transitions and competition strategy.",
+    "img": "images/bjj-d.webp"
+  },
+  {
+    "id": "muay-thai",
+    "name": "Muay Thai",
+    "focus": "Kicks, knees, elbows, clinch work",
+    "duration": "60 min",
+    "level": "Beginner - Advanced",
+    "description": "Stand-up striking system emphasizing powerful, efficient striking and clinch control.",
+    "extra": "Training includes individualized pad-work routines, progressive striking drills, and dedicated clinch strategy sessions that develop balance, control, and timing. Athletes learn to integrate elbows, knees and timing combinations with conditioning protocols to sustain intensity, plus tactical sparring to apply clinch entries, escapes and counters in realistic scenarios for competition readiness.",
+    "img": "images/muay-d.webp"
+  },
+  {
+    "id": "wrestling",
+    "name": "Olympic Wrestling",
+    "focus": "Takedowns, balance, and control",
+    "duration": "60 min",
+    "level": "All levels",
+    "description": "Olympic-style wrestling training for takedown technique, defense, and live drills.",
+    "extra": "Live situational breakdowns focus on real-time takedown setups, chain wrestling, and defensive counters. Coaches pair students for targeted drilling on level changes, rhythm disruption, and balance control. The curriculum progresses from single-leg and double-leg fundamentals to high-level scrambling, par terre defense, and situational strategy for competitive match situations.",
+    "img": "images/wrestle-d.webp"
+  },
+  {
+    "id": "kickboxing",
+    "name": "Kickboxing",
+    "focus": "Combination striking, movement",
+    "duration": "60 min",
+    "level": "All levels",
+    "description": "A hybrid striking class blending boxing and kicking techniques for sport and fitness.",
+    "extra": "Sessions emphasize interval-based sparring drills, pad circuits, and cardio-kick conditioning to build timing, power endurance, and recovery under pressure. Coaches implement progressive partner drills that combine movement patterns, combinations and tactical ring control, with feedback loops for improving distance management, defensive footwork, and sustained striking output.",
+    "img": "images/kickboxing-d.webp"
+  },
+  {
+    "id": "mma",
+    "name": "Mixed Martial Arts (MMA)",
+    "focus": "Integrated striking & grappling",
+    "duration": "90 min",
+    "level": "Intermediate - Advanced",
+    "description": "Combines our core disciplines into practical training for self-defense and competition.",
+    "extra": "MMA training blends striking and grappling into realistic match-simulation sessions, incorporating corner coaching, game-plan development, and tailored conditioning. Competitors receive individualized fight plans that address opponent tendencies, transition work between striking and grappling, and periodized training blocks for peak performance at competition time, including recovery and weight management guidance.",
+    "img": "images/mma-d.webp"
+  }
+  ,
+  {
+    "id": "krav-maga",
+    "name": "Krav Maga",
+    "focus": "Practical self-defense and situational awareness",
+    "duration": "60 min",
+    "level": "All levels",
+    "description": "A pragmatic self-defense system focused on real-world situations and threat avoidance.",
+    "extra": "Krav Maga sessions emphasize scenario-based training, threat recognition, and rapid neutralization techniques designed for real-world self-defense. Instruction covers situational awareness, de-escalation tactics, and practical counters to common attacks, with legal and ethical discussions to ensure responsible application and safe, repeatable drills for stress inoculation.",
+    "img": "images/krav-d.webp"
+  },
+  {
+    "id": "sambo",
+    "name": "Sambo",
+    "focus": "Throwing, leg locks, and combat grappling",
+    "duration": "70 min",
+    "level": "Beginner - Advanced",
+    "description": "A Russian grappling art blending throws and submission controls useful for sport and self-defense.",
+    "extra": "Sambo coursework includes progressive leg-lock systems, throwing entries and dynamic control strategies for both sport and practical self-defense. Athletes work through competition strategy sessions, drilling combinations that link throws to submissions, positional control under pressure, and tactical preparation for tournaments, including periodized strength and agility work tailored to grappling athletes.",
+    "img": "images/sambo-d.webp"
+  }
+]

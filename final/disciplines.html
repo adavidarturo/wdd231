@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disciplines — MMA Academy</title>
+  <meta name="description" content="Descriptions and levels for the martial arts disciplines taught at MMA Academy.">
+  <meta name="author" content="David Anampa">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/disciplines.css">
+  <script type="module" src="scripts/disciplines.mjs" defer></script>
+  <script type="module" src="scripts/nav.mjs" defer></script>
+
+  <!-- Meta tags - Facebook -->
+  <meta property="og:title" content="MMA Academy – The Warrior Path - Disciplines">
+  <meta property="og:description" content="Train in multiple martial arts disciplines with experienced instructors.">
+  <meta property="og:image" content="https://adavidarturo.github.io/wdd231/final/images/gem.svg">
+  <meta property="og:url" content="https://adavidarturo.github.io/wdd231/final/disciplines.html">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" aria-label="MMA Academy home">
+        <img src="images/gem.svg" width="48" height="48" alt="MMA Academy logo">
+      </a>
+      <h1>MMA Academy - The Warrior Path</h1>
+    </div>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <nav id="primary-nav" class="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="disciplines.html">Disciplines</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Disciplines</h2>
+      <p class="lead">Our curriculum focuses on eight core disciplines — each class emphasizes technique, safety, and progression.</p>
+      <div id="items" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-left">
+        <p>The warrior path - Arequipa</p>
+        <p>Address: Av. Example 123</p>
+        <p>Cel: (+51) 999 888 777</p>
+      </div>
+
+      <div class="footer-center" aria-label="Social media">
+        <a class="social" href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <img src="images/github.svg" alt="GitHub">
+        </a>
+        <a class="social" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <img src="images/instagram.svg" alt="Instagram">
+        </a>
+        <a class="social" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <p>WDD231 Final Project</p>
+        <p>David Anampa</p>
+        <p>© The Warrior path - Arequipa</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-modal="true"><div class="modal-content"><button id="modal-close" class="modal-close">✕</button><div id="modal-body"></div></div></div>
+</body>
+</html>

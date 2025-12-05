@@ -1,0 +1,31 @@
+/* Page-specific styles for join.html */
+@import url('styles.css');
+
+/* Slightly narrower on large screens and full-width on small */
+.form-panel{max-width:520px}
+
+/* Join form styles moved from global */
+.form-panel{
+  max-width:560px;
+  margin:28px auto;
+  padding:18px;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 20px 40px rgba(2,6,23,0.06)
+}
+.join-form{
+  display:flex;
+  flex-direction:column;
+  gap:12px
+}
+.join-form label{font-weight:700}
+
+.join-form input[type=text], .join-form input[type=email], .join-form select{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  font-size:16px
+}
+
+.join-form input[readonly]{background:#f5f5f5}
+.join-form .btn{align-self:stretch;text-align:center}
