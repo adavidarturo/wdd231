@@ -28,13 +28,13 @@
   <meta property="og:url" content="https://adavidarturo.github.io/wdd231/final/index.html">
 
   <!-- Mapbox -->
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.css" rel="stylesheet" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.js"></script>
 
 
-  <script type="module" src="scripts/main.mjs" defer></script>
-  <script type="module" src="scripts/nav.mjs" defer></script>
-  <script type="module" src="scripts/home.mjs" defer></script>
+  <script type="module" src="scripts/main.mjs"></script>
+  <script type="module" src="scripts/nav.mjs"></script>
+  <script type="module" src="scripts/home.mjs"></script>
 </head>
 <body>
   <header class="site-header">
@@ -131,7 +131,7 @@
 
     <section class="map-section container">
       <h3>Find our Office - Urb. Puerta del Sol Mz. A Lt. 2</h3>
-      <div id="map" class="map" aria-label="Map showing gym location"></div>
+      <div id="map" class="map" role="region" aria-label="Map showing gym location"></div>
     </section>
   </main>
 
@@ -143,7 +143,7 @@
         <p>Cel: (+51) 999 888 777</p>
       </div>
 
-      <div class="footer-center" aria-label="Social media">
+      <div class="footer-center" role="navigation" aria-label="Social media">
         <a class="social" href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
           <img src="images/github.svg" alt="GitHub">
         </a>
@@ -167,6 +167,7 @@
   <!-- Modal container -->
   <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-content">
+      <h2 id="modal-title" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px;">Dialog</h2>
       <button id="modal-close" class="modal-close" aria-label="Close dialog">x-icon</button>
       <div id="modal-body"></div>
     </div>
