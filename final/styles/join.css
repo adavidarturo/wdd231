@@ -29,3 +29,13 @@
 
 .join-form input[readonly]{background:#f5f5f5}
 .join-form .btn{align-self:stretch;text-align:center}
+
+/* Improve contrast for submit button */
+.join-form .btn{
+  background:var(--dark);
+  color:#fff;
+  border:2px solid var(--dark);
+  padding:12px 16px;
+  border-radius:8px;
+}
+.join-form .btn:hover{background:#b10505;border-color:#b10505}

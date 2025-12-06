@@ -53,7 +53,7 @@ body{
   color:var(--card);
   font-weight:600
 }
-.primary-nav a:hover{color:var(--accent)}
+.primary-nav a:hover{color:#000}
 
 /* Brand image styling (gem logo) */
 .brand img{
@@ -125,10 +125,11 @@ body{
 
 .card .card-actions button{
   background:transparent;
-  border:1px solid var(--accent);
-  color:var(--accent);
-  padding:8px 10px;
-  border-radius:8px
+  border:2px solid var(--text);
+  color:var(--text);
+  padding:10px 12px;
+  border-radius:8px;
+  font-weight:700;
 }
 
 /* Modal (shared) */
