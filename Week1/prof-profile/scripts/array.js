@@ -57,7 +57,7 @@ const courses = [
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming.',
         technology: ['HTML','CSS','JavaScript'],
-        completed: false
+        completed: true
     }
 ];
 
